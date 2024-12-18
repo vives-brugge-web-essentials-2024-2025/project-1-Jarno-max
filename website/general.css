@@ -1,0 +1,235 @@
+/* Algemene instellingen */
+body {
+    font-family: Arial, sans-serif; /* Lettertype voor de hele pagina */
+    background-image: url('images/Waterfall.png'); /* Achtergrondafbeelding */
+    background-size: cover; /* Afbeelding vult de pagina */
+    background-position: center; /* Centraal uitlijnen van de afbeelding */
+    background-attachment: fixed; /* Achtergrond blijft vaststaan bij scrollen */
+    color: black; /* Tekstkleur */
+    max-width: 90%; 
+    margin: 20px auto; 
+    padding: 0; 
+}
+
+/* Header en navigatie */
+.header-container {
+    background-image: url('images/achtergrond_Foto.png');
+    color: rgb(4, 4, 4);
+    text-align: center;/* Centreren van de tekst */
+    padding: 40px 0;
+    height: 180px;
+    background-position: center;
+    background-size: cover;
+}
+.navbar {
+    background-color: blueviolet;/* blauw-paarse achtergrond voor de navigatie */
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline-block;/* Horizontaal uitlijnen van de items */
+    margin: 0 15px;/* Ruimte tussen navigatie-items */
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;/* Verwijderen van onderstreping */
+    padding: 10px 20px;/* Klikbare ruimte vergroten */
+}
+
+.navbar ul li a:hover {
+    background-color: #005bb5;
+    border-radius: 5px; /* Afgeronde hoeken */
+}
+
+/* Secties */
+.section-container {
+    padding: 40px 20px;
+    margin: 20px 0;/* Afstand tussen secties */
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.section-container:nth-child(even) {
+    background-color: #e9f2fb;
+}
+
+.section-container h2 {
+    color: #0073e6;
+    font-size: 2em; /* Optioneel: vergroot de titels */
+}
+
+.section-container img {
+    max-width: 300px; /* Aangepaste maximale breedte */
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Kolommen voor oplossingen */
+.solution-columns {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.solution-item {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Contactsectie opmaak */
+.contact-section {
+    display: flex;
+    justify-content: center;
+    background-color: #d3d3d3; /* Achtergrondkleur van sectie */
+    padding: 40px 0;
+}
+
+.contact-container {
+    display: flex;
+    max-width: 800px;
+    background-color: #e0e0e0;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.contact-info, .contact-form {
+    padding: 20px;
+    flex: 1;
+}
+
+.contact-info {
+    background-color: #b5b5b5;
+    color: #2d6a4f;
+    text-align: left;
+}
+
+.contact-info h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #2d6a4f;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    font-size: 1em;
+}
+
+.contact-info .icon {
+    margin-left: 8px;
+    color: #2d6a4f;
+}
+
+.social-icons {
+    margin-top: 15px; /* zorgt voor een betere scheiding tussen de icons */
+}
+
+.social-icons a {
+    margin-right: 10px; /* voor het voorkomen van iconen die te dicht staan*/
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1); /* maakt het icoon een klein beetje groter als je er over gaat*/
+}
+
+.contact-form h3 {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    color: #2d6a4f;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-group .icon {
+    width: 50px; /* Aangepaste breedte voor de icons bij 'Neem contact op'*/ 
+    height: 35px; /* Aangepaste hoogte voor de icons bij 'Neem contact op'*/
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+    color: white;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.input-group input {
+    border: none;
+    width: 100%;
+    padding: 8px;
+    font-size: 1em;
+}
+
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background-color:green;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #1b4f3b;
+}
+
+/* Specifieke kleine afbeeldingen */
+.small-image {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+}

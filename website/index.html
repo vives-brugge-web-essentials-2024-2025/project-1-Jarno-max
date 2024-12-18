@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT4Climate - Klimaatoplossingen</title>
+    <link rel="stylesheet" href="general.css">
+</head>
+<body>
+    <!-- Container met bedrijfsnaam en slogan -->
+    <header class="header-container">
+        <h1>IoT4Climate</h1>
+        <p>Samen verschuiven we naar een groenere toekomst.</p>
+    </header>
+
+    <!-- Navigatiebalk -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">Over Ons</a></li>
+            <li><a href="#climate-change">Klimaatverandering</a></li>
+            <li><a href="#iot-solutions">Onze IoT-oplossingen</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sectie 1: Over ons -->
+    <section id="about" class="section-container">
+        <h2>Over IoT4Climate</h2>
+        <p>Wij zijn een team van jonge ondernemers met een gedeelde passie voor technologie en het milieu. Gedreven door onze liefde voor innovatie en de natuur, zetten wij ons in om bij te dragen aan een duurzame toekomst.</p>
+        <p>Onze missie is om geavanceerde Internet of Things (IoT)-oplossingen te ontwikkelen die een positieve impact hebben op het milieu. Met slimme technologieën helpen we klimaatverandering af te remmen en bedrijven en individuen te ondersteunen in het maken van duurzame keuzes.</p>
+        <p>De wereld om ons heen zit vol prachtige natuur, maar de gevolgen van klimaatverandering worden steeds zichtbaarder. Wij willen onze kennis en technologie inzetten om het milieu te beschermen, zodat toekomstige generaties kunnen blijven genieten van een gezonde planeet.</p>
+        <img src="images/klimaatverandering.png" alt="Ons team">
+        <a href="#top">Terug naar boven</a>
+    </section>
+
+    <!-- Sectie 2: Wat is klimaatverandering? -->
+    <section id="climate-change" class="section-container">
+        <h2>Klimaatverandering</h2>
+        <p>Klimaatverandering verwijst naar de opwarming van de aarde, veroorzaakt door de toenemende uitstoot van broeikasgassen zoals CO₂, methaan en stikstofoxiden. Deze gassen zorgen ervoor dat warmte in de atmosfeer wordt vastgehouden, wat leidt tot een verstoring van natuurlijke klimaatsystemen.</p>
+        <p>De effecten van klimaatverandering zijn steeds duidelijker zichtbaar. We ervaren vaker extreme weersomstandigheden zoals hittegolven, zware stormen en langdurige droogtes. Daarnaast stijgt de zeespiegel door het smelten van ijskappen en gletsjers, wat kustgebieden bedreigt. Ook het verlies van biodiversiteit is een ernstig gevolg, omdat ecosystemen onder druk komen te staan en dier- en plantensoorten verdwijnen.</p>
+        <img src="images/smeltende_bergen.png" alt="Klimaatverandering">
+        <a href="#top">Terug naar boven</a>
+    </section>
+
+    <!-- Sectie 3: Voorbeelden van IoT-oplossingen -->
+    <section id="iot-solutions" class="section-container">
+        <h2>IoT-oplossingen tegen klimaatverandering</h2>
+        <div class="solution-columns">
+            <div class="solution-item">
+                <h3>Real-time luchtkwaliteit monitoring</h3>
+                <p>Meet luchtverontreiniging in steden en implementeer oplossingen.</p>
+                <img src="images/Verbeteren_luchtkwaliteit.png" alt="Real-time luchtkwaliteit monitoring">
+            </div>
+            <div class="solution-item">
+                <h3>Slimme energiebeheer</h3>
+                <p>Optimaliseer energiegebruik in gebouwen met slimme sensoren.</p>
+                <img src="images/slimme_energiegebruik.png" alt="Slimme energiebeheer">
+            </div>
+            <div class="solution-item">
+                <h3>Waterbeheer in de landbouw</h3>
+                <p>Zorg voor efficiënt watergebruik door slimme irrigatiesystemen.</p>
+                <img src="images/Waterbeheer_landbouw.png" alt="Waterbeheer in de landbouw">
+            </div>
+        </div>
+        <a href="#top">Terug naar boven</a>
+    </section>
+
+ <!-- Sectie 4: Contactformulier -->
+<section id="contact" class="contact-section">
+    <div class="contact-container">
+        <!-- Contactgegevens -->
+        <div class="contact-info"> <!-- class wordt gebruikt voor de styling dus verwijst naar de CSS-->
+            <h2>IoT4Climate</h2>
+            <p>Xavarinastraat 10, 8000 Brugge <span class="icon">📍</span></p>
+            <p>info@iot4climate.be <span class="icon">✉️</span></p>
+            <p>+32 50 10 20 30 <span class="icon">📞</span></p>
+            <p>www.iot4climate.be <span class="icon">🌐</span></p>
+            <div class="social-icons">
+                <a href="#"><img src="images/facebook_icon.png" alt="Facebook"></a>
+                <a href="#"><img src="images/twitter_icon.png" alt="Twitter"></a>
+                <a href="#"><img src="images/Instagram_icon.png" alt="Instagram"></a>
+                <a href="#"><img src="images/linkedIn_icon.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+
+        <!-- Contactformulier -->
+        <div class="contact-form">
+            <h3>Neem contact op</h3>
+            <form>
+                <div class="input-group">
+                    <span class="icon">👤</span> 
+                    <input type="text" id="name" name="name" placeholder="Naam" required> <!-- required zorgt ervoor dat je iets moet invullen in het invoerveld  -->
+                </div>
+
+                <div class="input-group">
+                    <span class="icon">📧</span> 
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+
+                <div class="input-group">
+                    <span class="icon">📞</span>
+                    <input type="tel" id="phone" name="phone" placeholder="Telefoon">
+                </div>
+
+                <textarea id="message" name="message" rows="4" placeholder="Uw bericht..." required></textarea>
+
+                <button type="submit">Verstuur</button>
+                <a href="#top">Terug naar boven</a> <!-- Een hyperlink die gebruikers naar de bovenkant van de pagina brengt -->
+            </form>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 IoT4Climate - Alle rechten voorbehouden</p> <!-- De footer toont een copyrightmelding voor het bedrijf -->
+    </footer>
+</body>
+</html>
